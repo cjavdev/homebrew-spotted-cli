@@ -1,16 +1,16 @@
-# Cjavdev Spotted-cli
+# Spotted-cli
 
 ## How do I install these formulae?
 
-`brew install cjavdev/spotted-cli/<formula>`
+`brew install cjavdev/spotted-cli/spotted-cli`
 
-Or `brew tap cjavdev/spotted-cli` and then `brew install <formula>`.
+Or `brew tap cjavdev/spotted-cli` and then `brew install spotted-cli`.
 
 Or, in a `brew bundle` `Brewfile`:
 
 ```ruby
 tap "cjavdev/spotted-cli"
-brew "<formula>"
+brew "spotted-cli"
 ```
 
 ## Documentation
