@@ -11,7 +11,7 @@ class SpottedCli < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(output: bin/"spotted-cli"), "./cmd/spotted-cli"
+    system "go", "build", *std_go_args(output: bin/"spotted"), "./cmd/spotted"
   end
 
   test do
@@ -24,6 +24,6 @@ class SpottedCli < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system bin/"program", "do", "something"`.
-    system "#{bin}/spotted-cli", "--version"
+    system "#{bin}/spotted", "--version"
   end
 end
