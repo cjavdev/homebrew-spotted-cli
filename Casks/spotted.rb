@@ -2,6 +2,20 @@
 cask "spotted" do
   version "0.21.0"
 
+  name "spotted"
+  desc "Unofficial CLI for the Spotify API"
+  homepage "https://spotted.stldocs.com/"
+
+  livecheck do
+    skip "Auto-generated on release."
+  end
+
+  binary "spotted"
+  manpage "man/man1/spotted.1.gz"
+  bash_completion "completions/spotted.bash"
+  fish_completion "completions/spotted.fish"
+  zsh_completion "completions/spotted.zsh"
+
   on_macos do
     on_intel do
       sha256 "3c88db34fc41dc781ad0e6cfea7312b552c057cdf8576ba3036497b5ca800246"
@@ -23,20 +37,6 @@ cask "spotted" do
       url "https://github.com/cjavdev/spotted-cli/releases/download/v#{version}/spotted_#{version}_linux_arm64.tar.gz"
     end
   end
-
-  name "spotted"
-  desc "Unofficial CLI for the Spotify API"
-  homepage "https://spotted.stldocs.com/"
-
-  livecheck do
-    skip "Auto-generated on release."
-  end
-
-  binary "spotted"
-  manpage "man/man1/spotted.1.gz"
-  bash_completion "completions/spotted.bash"
-  zsh_completion "completions/spotted.zsh"
-  fish_completion "completions/spotted.fish"
 
   # No zap stanza required
 end
