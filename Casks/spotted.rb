@@ -3,7 +3,7 @@ cask "spotted" do
   name "spotted"
   desc "Unofficial CLI for the Spotify API"
   homepage "https://spotted.cjav.dev/"
-  version "0.22.2"
+  version "0.22.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -18,22 +18,22 @@ cask "spotted" do
   on_macos do
     on_intel do
       url "https://github.com/cjavdev/spotted-cli/releases/download/v#{version}/spotted_#{version}_macos_amd64.zip"
-      sha256 "7862b85c05030ded29727559447262789dd1dde9786a3c008e279b54efeb74fb"
+      sha256 "a0be6b8d517477ffa2e98cd6753b854151999df5ee72d5d349f8830342cd6ce5"
     end
     on_arm do
       url "https://github.com/cjavdev/spotted-cli/releases/download/v#{version}/spotted_#{version}_macos_arm64.zip"
-      sha256 "5bdf767790d8b03bb030fed78511f65d0ae9d924d6cd5b8218e929dd44c5d27e"
+      sha256 "9c531cd3ffe1e461acd1c4686ed1b705f845b7ff732279d43bcb5f392b70673b"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/cjavdev/spotted-cli/releases/download/v#{version}/spotted_#{version}_linux_amd64.tar.gz"
-      sha256 "2b9cd92425a8af5d54db864fa58d9f608e66278aca146f185fc338bf8324fbcb"
+      sha256 "633235191fc9096c782027da257fb4c8412bafca20ae5573ec64bab62db13585"
     end
     on_arm do
       url "https://github.com/cjavdev/spotted-cli/releases/download/v#{version}/spotted_#{version}_linux_arm64.tar.gz"
-      sha256 "378812a08d6021d1db42874eb17f9cd5528fb35e6677ed8fc4f6991a9af99592"
+      sha256 "ccb8975c8ddff9c592c6867c25209d86931d4f009015f038c311633579b17dc5"
     end
   end
 
